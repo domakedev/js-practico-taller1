@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Taller 1 - Figuras</title>
   </head>
+
   <body>
     <header class="header">
       <img class="header__logo" src="images/accusoft-brands.svg" alt="" />
@@ -14,26 +15,97 @@
     </header>
 
     <main class="main">
-      <section class="main__presentation">
-        <h1 class="main__title">Calcula el area de tu cuadrado</h1>
-        <img class="main__image" src="images/square.svg" alt="" />
-      </section>
+      <div class="squareArea bloqueCalculo">
+        <section class="main__presentation">
+          <h1 class="main__title">Calcula el area de tu cuadrado</h1>
+          <img class="main__image" src="images/square.svg" alt="" />
+        </section>
 
-      <section class="main__data">
-        <form action="" class="main__data__form">
-          <label  class="input__text" for="ladoCuadrado">¿Cual es el lado de tu cuadrado en <b>cm?</b></label>
-          <input id="ladoCuadrado" type="number"  />
-          <button class="button" type="button" onclick="calcularAreaCuadrado()">Calcular Area</button>
-        </form>
-        <div class="areaResultado">
+        <section class="main__data">
+          <form action="" class="main__data__form">
+            <label class="input__text" for="ladoCuadrado"
+              >¿Cual es el lado de tu cuadrado en <b>cm?</b></label
+            >
+            <input id="ladoCuadrado" type="number" />
+            <button
+              class="button"
+              type="button"
+              onclick="calcularAreaCuadrado()"
+            >
+              Calcular Area
+            </button>
+          </form>
+          <div class="areaResultado">
             <h2 class="areaResultado__title">El area de tu cuadrado es:</h2>
             <!-- <p class="areaResultado__text"></p> -->
-        </div>
-      </section>
+          </div>
+        </section>
+      </div>
+
+      <div class="isoTH bloqueCalculo">
+        <section class="main__presentation">
+          <h1 class="main__title">
+            Calcula la altura de tu triangulo Isoceles.
+          </h1>
+          <img class="main__image" src="images/isoT.png" alt="" />
+        </section>
+
+        <section class="main__data">
+          <form action="" class="main__data__form">
+            
+
+
+
+            <label class="input__text" for="ladoTriangleA"
+              >¿Cual es el <b>primer</b> lado de tu triangulo en
+              <b>cm?</b></label
+            >
+            <input id="ladoTriangleA" type="number" />
+
+
+
+
+
+
+            <label class="input__text" for="ladoTriangleB"
+              >¿Cual es el <b>segundo</b> lado de tu triangulo en
+              <b>cm?</b></label
+            >
+            <input id="ladoTriangleB" type="number" />
+
+
+
+
+
+            <label class="input__text" for="ladoTriangleC"
+              >¿Cual es el <b>tercer</b> lado de tu triangulo en
+              <b>cm?</b></label
+            >
+            <input id="ladoTriangleC" type="number" />
+
+
+
+
+
+
+            <button
+              class="button"
+              type="button"
+              onclick="calcularAlturaTriangle()"
+            >
+              Calcular Altura
+            </button>
+          </form>
+          <div class="areaResultadoT">
+            <h2 class="areaResultado__title">La altura de tu triangulo es:</h2>
+            <!-- <p class="areaResultadoT__text"></p> -->
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
-        <p>Nunca pares de aprender! 💛</p>
+      <p>Nunca pares de aprender! 💛</p>
     </footer>
 
     <script src="scripts.js"></script>
