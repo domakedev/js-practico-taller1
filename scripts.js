@@ -4,7 +4,7 @@ const calcularAreaCuadrado = () => {
   let area = value * value + "cm²";
 
   let resultBox = document.querySelector(".areaResultado__text");
-  
+
   if (resultBox) {
     resultBox.remove();
   }
@@ -78,7 +78,7 @@ const calcularAlturaTriangle = () => {
       printAlert("No hay 2 lados iguales")
     }
   } else {
-    console.log("Uno de los valores es menor que cero");
+    printAlert("Ningun lado puede ser menor que 0")
   }
 };
 
