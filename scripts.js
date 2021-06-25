@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('input').forEach( node => node.addEventListener('keypress', e => {
       if(e.keyCode == 13) {
         e.preventDefault();
+        calcularAreaCuadrado();
       }
     }))
   });
