@@ -1,8 +1,28 @@
 const calcularAreaCuadrado = () => {
     let input = document.querySelector('#ladoCuadrado')
     let value = input.value
+    let area = (value*value)+"cm²"
 
-    alert(`El area de tu cuadrado es: ${value*value}`)
+
+    let resultBox = document.querySelector('.areaResultado__text')
+
+    console.log(resultBox);
+
+    if (resultBox) {
+        resultBox.remove()
+
+    }
+
+
+    let resultNode = document.createElement('p')
+    resultNode.className = "areaResultado__text"
+
+    let nodoPadre = document.querySelector('.areaResultado')
+
+    nodoPadre.append(resultNode)
+
+    resultBox = document.querySelector('.areaResultado__text')
+    resultBox.append(area)
 }
 
 document.addEventListener('DOMContentLoaded', () => {
