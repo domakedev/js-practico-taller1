@@ -74,3 +74,6 @@ typings/
 
 # FuseBox cache
 .fusebox/
+
+#Estilos del vscode
+.vscode
