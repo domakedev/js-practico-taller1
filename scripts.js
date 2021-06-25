@@ -4,9 +4,7 @@ const calcularAreaCuadrado = () => {
   let area = value * value + "cm²";
 
   let resultBox = document.querySelector(".areaResultado__text");
-
-  console.log(resultBox);
-
+  
   if (resultBox) {
     resultBox.remove();
   }
@@ -98,7 +96,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const printResult = (info) => {
-  //console.log("Desde printResult");
   let resultBoxT = document.querySelector(".areaResultadoT__text");
   if (resultBoxT) {
     resultBoxT.remove();
@@ -111,12 +108,6 @@ const printResult = (info) => {
 };
 
 const printAlert = (info) => {
-
-  //console.log("Desde printResult");
-  // let resultBoxT = document.querySelector(".areaResultadoT__textAlert");
-  // if (resultBoxT) {
-  //   resultBoxT.remove();
-  // }
 
   limpiarPrints();
 
